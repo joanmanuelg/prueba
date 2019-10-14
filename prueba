@@ -1,0 +1,4 @@
+#Python 
+n= input("insertar numero")
+n2= int(n)**2
+print (n2)
