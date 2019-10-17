@@ -1,7 +1,7 @@
 from tkinter import *
 from math import *
 def a():
-    r.set((int(n1.get()))*(int(n1.get())))
+    r.set((float(n1.get()))*(float(n1.get())))
 ventana=Tk()
 ventana.title("Potenciador")
 ventana.geometry("392x200")
