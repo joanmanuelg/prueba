@@ -1,4 +1,14 @@
-#Python 
-n= input("insertar numero")
-n2= int(n)**2
-print (n2)
+from tkinter import *
+from math import *
+def a():
+    r.set((int(n1.get()))*(int(n1.get())))
+ventana=Tk()
+ventana.title("Potenciador")
+ventana.geometry("392x200")
+n1 = StringVar()
+r = StringVar()
+Entry(ventana, font=('time news roman',20,'bold'),width=22,bd=20,textvariable=n1,insertwidth=4,bg="gray77",justify="right").pack()
+Entry(ventana, font=('time news roman',20,'bold'),width=22,bd=20,textvariable=r,insertwidth=4,bg="gray77",justify="right").pack()
+Button(ventana,text="calcular",bg="gray77",width=60,height=3,command=a).pack()
+ventana.mainloop()
+
